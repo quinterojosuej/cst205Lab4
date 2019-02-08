@@ -1,0 +1,47 @@
+
+import secrets
+from PIL import Image # an error here means that Pillow is not installed
+im = Image.open('chualarSign.JPG')
+# print(im)
+print(im.size) # (1024, 768)
+width, height = im.size
+#im.show()
+
+#print(dir(im)) 
+
+pic_width = 4
+pic_height = 5
+#for x in range(pic_width): # loop from 0 to pic_width - 1
+#	for y in range(pic_height): # loop from 0 to pic_height - 1
+#		print("Coordinates:",(x,y))
+#		print("Pixel",im.getpixel((x,y)))
+width, height = im.size
+big_pixel_list = []
+for x in range(width):
+	for y in range(height):
+		big_pixel_list.append(im.getpixel((x,y)))
+pic_width = 4
+pic_height = 5
+#for x in range(pic_width): # loop from 0 to pic_width - 1
+#	for y in range(pic_height): # loop from 0 to pic_height - 1
+#		print((x,y))
+
+width, height = im.size
+big_pixel_list = []
+for x in range(width):
+	for y in range(height):
+		big_pixel_list.append(im.getpixel((x,y)))
+
+#print (big_pixel_list)
+
+for x in range(width):
+	for y in range(height):
+		rgb_val = (
+		 secrets.choice(range(40,200)),
+		 secrets.choice(range(150,170)),
+		 secrets.choice(range(50,200))
+		 )
+		im.putpixel((x,y), rgb_val)
+
+im.save("chualarSign.JPG")
+im.show()
