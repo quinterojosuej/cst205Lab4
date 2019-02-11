@@ -1,0 +1,68 @@
+import pickle
+
+firstImage =[
+            [ (54, 54, 54), (232, 23, 93), (71, 71, 71), (168, 167, 167) ], 
+            [ (204, 82, 122), (54, 54, 54), (168, 167, 167), (232, 23, 93) ], 
+            [ (71, 71, 71), (168, 167, 167), (54, 54, 54), (204, 82, 122) ], 
+            [ (168, 167, 167), (204, 82, 122), (232, 23, 93), (54, 54, 54) ]
+            ]
+
+
+redBin = [0,0,0,0]
+
+greenBin = [0,0,0,0]
+ 
+blueBin =  [0,0,0,0]
+
+for x in range(4):
+    for y in range(4):
+        for z in range(3):
+            if z ==0:
+                if firstImage[x][y][z] <= 63:
+                    redBin[0]+=1
+
+                if firstImage[x][y][z] > 63 and firstImage[x][y][z] <= 127:
+                    redBin[1]+=1
+
+                if firstImage[x][y][z] > 128 and firstImage[x][y][z] <= 191:
+                    redBin[2]+=1
+
+                if firstImage[x][y][z] > 192 and firstImage[x][y][z] <= 255:
+                    redBin[3]+=1
+
+            if z == 1:
+
+                if firstImage[x][y][z] <= 63:
+                    greenBin[0]+=1
+
+                if firstImage[x][y][z] > 63 and firstImage[x][y][z] <= 127:
+                    greenBin[1]+=1
+
+                if firstImage[x][y][z] > 128 and firstImage[x][y][z] <= 191:
+                    greenBin[2]+=1
+
+                if firstImage[x][y][z] > 192 and firstImage[x][y][z] <= 255:
+                    greenBin[3]+=1
+
+            if z == 2:
+
+                if firstImage[x][y][z] <= 63:
+                    blueBin[0]+=1
+
+                if firstImage[x][y][z] > 63 and firstImage[x][y][z] <= 127:
+                    blueBin[1]+=1
+
+                if firstImage[x][y][z] > 128 and firstImage[x][y][z] <= 191:
+                    blueBin[2]+=1
+
+                if firstImage[x][y][z] > 192 and firstImage[x][y][z] <= 255:
+                    blueBin[3]+=1
+
+print(redBin)
+print(greenBin)
+print(blueBin)
+
+newData = Unpickler("image_matrix").load()
+print(newData)
+
+
