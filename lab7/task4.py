@@ -35,7 +35,7 @@ def chromakey(source, bg):
         for y in range(source.height):
             cur_pixel = source.getpixel((x,y))
             green = (0, 190, 60)
-            if distance(cur_pixel, green) < 250:
+            if distance(cur_pixel, green) < 10:
                 # grab the color at the same spot from the new background
                 source.putpixel((x,y), bg.getpixel((x,y)))
     source.save("chroma1.png")
