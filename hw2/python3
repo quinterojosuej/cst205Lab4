@@ -1,0 +1,20 @@
+from PIL import Image
+import math
+
+imageDict={
+        "source1":Image.open("forCst/1.png"),
+        "source2":Image.open("forCst/2.png"),
+        "source3":Image.open("forCst/3.png"),
+        "source4":Image.open("forCst/4.png"),
+        "source5":Image.open("forCst/5.png"),
+        "source6":Image.open("forCst/6.png"),
+        "source7":Image.open("forCst/7.png"),
+        "source8":Image.open("forCst/8.png"),
+        "source9":Image.open("forCst/9.png"),
+        "source10":Image.open("forCst/10.png"),
+        "source11":Image.open("forCst/11.png"),
+}
+imageDict["source1"].show()
+#source11.show()
+
+def multipleImages(
