@@ -10,13 +10,20 @@ and remove the obstructinos, like in this case the motorcylce
 #The following modules are required for the code to work
 from PIL import Image
 import math
-
+import glob
 
 #This is where the images are opened and stored at
+
+image = glob.glob("Images/*.png")
+imageDict = []
+for i in image:
+    imageDict.append(Image.open(i))
+
+"""
 imageDict={
-        1:Image.open("forCst/1.png"),
-        2:Image.open("forCst/2.png"),
-        3:Image.open("forCst/3.png"),
+        1:Image.open("Images/1.png"),
+        2:Image.open("Images/2.png"),
+        3:Image.open("/3.png"),
         4:Image.open("forCst/4.png"),
         5:Image.open("forCst/5.png"),
         6:Image.open("forCst/6.png"),
@@ -26,6 +33,7 @@ imageDict={
         10:Image.open("forCst/10.png"),
         11:Image.open("forCst/11.png")
 }
+"""
 
 #Because the same camera was used, the dimensions would be the same
 #This is then for convenience
@@ -52,7 +60,7 @@ def replacer(a,b):
         for y in range(height):
             pixelVal1 = imageDict[a].getpixel((x,y))
             pixelVal2 = imageDict[b].getpixel((x,y))
-            if(pixelEvaluator(pixelVal1,pixelVal2) <30):
+            if(pixelEvaluator(pixelVal1,pixelVal2) <1):
                 im.putpixel((x,y),pixelVal1)
 
             
@@ -63,13 +71,13 @@ def replacer(a,b):
 #replacer and inputs two files, making sure that if the function is at a last image 
 #file, then the first is called to evaluate with the first and then stops.
 def multipleImages():
-    for x in list(imageDict):
+    for x in range(len(imageDict)):
         #print(x)
         x = int(x)
         y = int(x)
         y+=1
-        if(y==12):
-            y=1
+        if(y==len(imageDict)):
+            y=0
         replacer(x,y)
         
         
