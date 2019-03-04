@@ -1,0 +1,412 @@
+Help on module PyQt5.Qt in PyQt5:
+
+NNAAMMEE
+    PyQt5.Qt
+
+FFUUNNCCTTIIOONNSS
+    QQTT__TTRRAANNSSLLAATTEE__NNOOOOPP(...)
+        QT_TRANSLATE_NOOP(str, str) -> str
+    
+    QQTT__TTRR__NNOOOOPP(...)
+        QT_TR_NOOP(str) -> str
+    
+    QQTT__TTRR__NNOOOOPP__UUTTFF88(...)
+        QT_TR_NOOP_UTF8(str) -> str
+    
+    QQ__AARRGG(...)
+        Q_ARG(object, object) -> QGenericArgument
+    
+    QQ__CCLLAASSSSIINNFFOO(...)
+        Q_CLASSINFO(str, str)
+    
+    QQ__EENNUUMM(...)
+        Q_ENUM(Union[type, enum.Enum])
+    
+    QQ__EENNUUMMSS(...)
+        Q_ENUMS(*)
+    
+    QQ__FFLLAAGG(...)
+        Q_FLAG(Union[type, enum.Enum])
+    
+    QQ__FFLLAAGGSS(...)
+        Q_FLAGS(*)
+    
+    QQ__RREETTUURRNN__AARRGG(...)
+        Q_RETURN_ARG(object) -> QGenericReturnArgument
+    
+    bbiinn__(...)
+        bin_(QTextStream) -> QTextStream
+    
+    bboomm(...)
+        bom(QTextStream) -> QTextStream
+    
+    cceenntteerr(...)
+        center(QTextStream) -> QTextStream
+    
+    ddeecc(...)
+        dec(QTextStream) -> QTextStream
+    
+    eennddll(...)
+        endl(QTextStream) -> QTextStream
+    
+    ffiixxeedd(...)
+        fixed(QTextStream) -> QTextStream
+    
+    fflluusshh(...)
+        flush(QTextStream) -> QTextStream
+    
+    ffoorrcceeppooiinntt(...)
+        forcepoint(QTextStream) -> QTextStream
+    
+    ffoorrcceessiiggnn(...)
+        forcesign(QTextStream) -> QTextStream
+    
+    hheexx__(...)
+        hex_(QTextStream) -> QTextStream
+    
+    lleefftt(...)
+        left(QTextStream) -> QTextStream
+    
+    lloowweerrccaasseebbaassee(...)
+        lowercasebase(QTextStream) -> QTextStream
+    
+    lloowweerrccaasseeddiiggiittss(...)
+        lowercasedigits(QTextStream) -> QTextStream
+    
+    nnooffoorrcceeppooiinntt(...)
+        noforcepoint(QTextStream) -> QTextStream
+    
+    nnooffoorrcceessiiggnn(...)
+        noforcesign(QTextStream) -> QTextStream
+    
+    nnoosshhoowwbbaassee(...)
+        noshowbase(QTextStream) -> QTextStream
+    
+    oocctt__(...)
+        oct_(QTextStream) -> QTextStream
+    
+    ppyyqqttPPiicckklleePPrroottooccooll(...)
+        pyqtPickleProtocol() -> Optional[int]
+    
+    ppyyqqttRReemmoovveeIInnppuuttHHooookk(...)
+        pyqtRemoveInputHook()
+    
+    ppyyqqttRReessttoorreeIInnppuuttHHooookk(...)
+        pyqtRestoreInputHook()
+    
+    ppyyqqttSSeettPPiicckklleePPrroottooccooll(...)
+        pyqtSetPickleProtocol(Optional[int])
+    
+    ppyyqqttSSlloott(...)
+        @pyqtSlot(*types, name: Optional[str], result: Optional[str])
+        
+        This is a decorator applied to Python methods of a QObject that marks them
+        as Qt slots.
+        The non-keyword arguments are the types of the slot arguments and each may
+        be a Python type object or a string specifying a C++ type.
+        name is the name of the slot and defaults to the name of the method.
+        result is type of the value returned by the slot.
+    
+    qqAAbbss(...)
+        qAbs(float) -> float
+    
+    qqAAddddPPoossttRRoouuttiinnee(...)
+        qAddPostRoutine(Callable[..., None])
+    
+    qqAAddddPPrreeRRoouuttiinnee(...)
+        qAddPreRoutine(Callable[[], None])
+    
+    qqAAllpphhaa(...)
+        qAlpha(QRgba64) -> int
+        qAlpha(int) -> int
+    
+    qqBBlluuee(...)
+        qBlue(QRgba64) -> int
+        qBlue(int) -> int
+    
+    qqCChheecckkssuumm(...)
+        qChecksum(bytes) -> int
+        qChecksum(bytes, Qt.ChecksumType) -> int
+    
+    qqCCoommpprreessss(...)
+        qCompress(Union[QByteArray, bytes, bytearray], compressionLevel: int = -1) -> QByteArray
+    
+    qqCCrriittiiccaall(...)
+        qCritical(str)
+    
+    qqDDeebbuugg(...)
+        qDebug(str)
+    
+    qqDDrraawwBBoorrddeerrPPiixxmmaapp(...)
+        qDrawBorderPixmap(QPainter, QRect, QMargins, QPixmap)
+    
+    qqDDrraawwPPllaaiinnRReecctt(...)
+        qDrawPlainRect(QPainter, int, int, int, int, Union[QColor, Qt.GlobalColor], lineWidth: int = 1, fill: Union[QBrush, QColor, Qt.GlobalColor, QGradient] = None)
+        qDrawPlainRect(QPainter, QRect, Union[QColor, Qt.GlobalColor, QGradient], lineWidth: int = 1, fill: Union[QBrush, QColor, Qt.GlobalColor, QGradient] = None)
+    
+    qqDDrraawwSShhaaddeeLLiinnee(...)
+        qDrawShadeLine(QPainter, int, int, int, int, QPalette, sunken: bool = True, lineWidth: int = 1, midLineWidth: int = 0)
+        qDrawShadeLine(QPainter, QPoint, QPoint, QPalette, sunken: bool = True, lineWidth: int = 1, midLineWidth: int = 0)
+    
+    qqDDrraawwSShhaaddeePPaanneell(...)
+        qDrawShadePanel(QPainter, int, int, int, int, QPalette, sunken: bool = False, lineWidth: int = 1, fill: Union[QBrush, QColor, Qt.GlobalColor, QGradient] = None)
+        qDrawShadePanel(QPainter, QRect, QPalette, sunken: bool = False, lineWidth: int = 1, fill: Union[QBrush, QColor, Qt.GlobalColor, QGradient] = None)
+    
+    qqDDrraawwSShhaaddeeRReecctt(...)
+        qDrawShadeRect(QPainter, int, int, int, int, QPalette, sunken: bool = False, lineWidth: int = 1, midLineWidth: int = 0, fill: Union[QBrush, QColor, Qt.GlobalColor, QGradient] = None)
+        qDrawShadeRect(QPainter, QRect, QPalette, sunken: bool = False, lineWidth: int = 1, midLineWidth: int = 0, fill: Union[QBrush, QColor, Qt.GlobalColor, QGradient] = None)
+    
+    qqDDrraawwWWiinnBBuuttttoonn(...)
+        qDrawWinButton(QPainter, int, int, int, int, QPalette, sunken: bool = False, fill: Union[QBrush, QColor, Qt.GlobalColor, QGradient] = None)
+        qDrawWinButton(QPainter, QRect, QPalette, sunken: bool = False, fill: Union[QBrush, QColor, Qt.GlobalColor, QGradient] = None)
+    
+    qqDDrraawwWWiinnPPaanneell(...)
+        qDrawWinPanel(QPainter, int, int, int, int, QPalette, sunken: bool = False, fill: Union[QBrush, QColor, Qt.GlobalColor, QGradient] = None)
+        qDrawWinPanel(QPainter, QRect, QPalette, sunken: bool = False, fill: Union[QBrush, QColor, Qt.GlobalColor, QGradient] = None)
+    
+    qqEEnnvviirroonnmmeennttVVaarriiaabbllee(...)
+        qEnvironmentVariable(str) -> str
+        qEnvironmentVariable(str, str) -> str
+    
+    qqEErrrrnnooWWaarrnniinngg(...)
+        qErrnoWarning(int, str)
+        qErrnoWarning(str)
+    
+    qqFFaattaall(...)
+        qFatal(str)
+    
+    qqFFllooaattDDiissttaannccee(...)
+        qFloatDistance(float, float) -> int
+    
+    qqFFoorrmmaattLLooggMMeessssaaggee(...)
+        qFormatLogMessage(QtMsgType, QMessageLogContext, str) -> str
+    
+    qqFFuuzzzzyyCCoommppaarree(...)
+        qFuzzyCompare(float, float) -> bool
+    
+    qqGGrraayy(...)
+        qGray(int, int, int) -> int
+        qGray(int) -> int
+    
+    qqGGrreeeenn(...)
+        qGreen(QRgba64) -> int
+        qGreen(int) -> int
+    
+    qqIInnff(...)
+        qInf() -> float
+    
+    qqIInnffoo(...)
+        qInfo(str)
+    
+    qqIInnssttaallllMMeessssaaggeeHHaannddlleerr(...)
+        qInstallMessageHandler(Optional[Callable[[QtMsgType, QMessageLogContext, str], None]]) -> Optional[Callable[[QtMsgType, QMessageLogContext, str], None]]
+    
+    qqIIssFFiinniittee(...)
+        qIsFinite(float) -> bool
+    
+    qqIIssGGrraayy(...)
+        qIsGray(int) -> bool
+    
+    qqIIssIInnff(...)
+        qIsInf(float) -> bool
+    
+    qqIIssNNaaNN(...)
+        qIsNaN(float) -> bool
+    
+    qqIIssNNuullll(...)
+        qIsNull(float) -> bool
+    
+    qqPPiixxeellFFoorrmmaattAAllpphhaa(...)
+        qPixelFormatAlpha(int, typeInterpretation: QPixelFormat.TypeInterpretation = QPixelFormat.UnsignedInteger) -> QPixelFormat
+    
+    qqPPiixxeellFFoorrmmaattCCmmyykk(...)
+        qPixelFormatCmyk(int, alphaSize: int = 0, alphaUsage: QPixelFormat.AlphaUsage = QPixelFormat.IgnoresAlpha, alphaPosition: QPixelFormat.AlphaPosition = QPixelFormat.AtBeginning, typeInterpretation: QPixelFormat.TypeInterpretation = QPixelFormat.UnsignedInteger) -> QPixelFormat
+    
+    qqPPiixxeellFFoorrmmaattGGrraayyssccaallee(...)
+        qPixelFormatGrayscale(int, typeInterpretation: QPixelFormat.TypeInterpretation = QPixelFormat.UnsignedInteger) -> QPixelFormat
+    
+    qqPPiixxeellFFoorrmmaattHHssll(...)
+        qPixelFormatHsl(int, alphaSize: int = 0, alphaUsage: QPixelFormat.AlphaUsage = QPixelFormat.IgnoresAlpha, alphaPosition: QPixelFormat.AlphaPosition = QPixelFormat.AtBeginning, typeInterpretation: QPixelFormat.TypeInterpretation = QPixelFormat.FloatingPoint) -> QPixelFormat
+    
+    qqPPiixxeellFFoorrmmaattHHssvv(...)
+        qPixelFormatHsv(int, alphaSize: int = 0, alphaUsage: QPixelFormat.AlphaUsage = QPixelFormat.IgnoresAlpha, alphaPosition: QPixelFormat.AlphaPosition = QPixelFormat.AtBeginning, typeInterpretation: QPixelFormat.TypeInterpretation = QPixelFormat.FloatingPoint) -> QPixelFormat
+    
+    qqPPiixxeellFFoorrmmaattRRggbbaa(...)
+        qPixelFormatRgba(int, int, int, int, QPixelFormat.AlphaUsage, QPixelFormat.AlphaPosition, premultiplied: QPixelFormat.AlphaPremultiplied = QPixelFormat.NotPremultiplied, typeInterpretation: QPixelFormat.TypeInterpretation = QPixelFormat.UnsignedInteger) -> QPixelFormat
+    
+    qqPPiixxeellFFoorrmmaattYYuuvv(...)
+        qPixelFormatYuv(QPixelFormat.YUVLayout, alphaSize: int = 0, alphaUsage: QPixelFormat.AlphaUsage = QPixelFormat.IgnoresAlpha, alphaPosition: QPixelFormat.AlphaPosition = QPixelFormat.AtBeginning, premultiplied: QPixelFormat.AlphaPremultiplied = QPixelFormat.NotPremultiplied, typeInterpretation: QPixelFormat.TypeInterpretation = QPixelFormat.UnsignedByte, byteOrder: QPixelFormat.ByteOrder = QPixelFormat.LittleEndian) -> QPixelFormat
+    
+    qqPPrreemmuullttiippllyy(...)
+        qPremultiply(QRgba64) -> QRgba64
+        qPremultiply(int) -> int
+    
+    qqQQNNaaNN(...)
+        qQNaN() -> float
+    
+    qqRReedd(...)
+        qRed(QRgba64) -> int
+        qRed(int) -> int
+    
+    qqRReeggiisstteerrRReessoouurrcceeDDaattaa(...)
+        qRegisterResourceData(int, bytes, bytes, bytes) -> bool
+    
+    qqRReemmoovveePPoossttRRoouuttiinnee(...)
+        qRemovePostRoutine(Callable[..., None])
+    
+    qqRRggbb(...)
+        qRgb(int, int, int) -> int
+    
+    qqRRggbbaa(...)
+        qRgba(int, int, int, int) -> int
+    
+    qqRRggbbaa6644(...)
+        qRgba64(int, int, int, int) -> QRgba64
+        qRgba64(int) -> QRgba64
+    
+    qqRRoouunndd(...)
+        qRound(float) -> int
+    
+    qqRRoouunndd6644(...)
+        qRound64(float) -> int
+    
+    qqSSNNaaNN(...)
+        qSNaN() -> float
+    
+    qqSSeettFFiieellddWWiiddtthh(...)
+        qSetFieldWidth(int) -> QTextStreamManipulator
+    
+    qqSSeettMMeessssaaggeePPaatttteerrnn(...)
+        qSetMessagePattern(str)
+    
+    qqSSeettPPaaddCChhaarr(...)
+        qSetPadChar(str) -> QTextStreamManipulator
+    
+    qqSSeettRReeaallNNuummbbeerrPPrreecciissiioonn(...)
+        qSetRealNumberPrecision(int) -> QTextStreamManipulator
+    
+    qqSShhaarreeddBBuuiilldd(...)
+        qSharedBuild() -> bool
+    
+    qqUUnnccoommpprreessss(...)
+        qUncompress(Union[QByteArray, bytes, bytearray]) -> QByteArray
+    
+    qqUUnnpprreemmuullttiippllyy(...)
+        qUnpremultiply(QRgba64) -> QRgba64
+        qUnpremultiply(int) -> int
+    
+    qqUUnnrreeggiisstteerrRReessoouurrcceeDDaattaa(...)
+        qUnregisterResourceData(int, bytes, bytes, bytes) -> bool
+    
+    qqVVeerrssiioonn(...)
+        qVersion() -> str
+    
+    qqWWaarrnniinngg(...)
+        qWarning(str)
+    
+    qqjjssEEnnggiinnee(...)
+        qjsEngine(QObject) -> QJSEngine
+    
+    qqmmllAAttttaacchheeddPPrrooppeerrttiieessOObbjjeecctt(...)
+        qmlAttachedPropertiesObject(type, QObject, create: bool = True) -> QObject
+    
+    qqmmllCClleeaarrTTyyppeeRReeggiissttrraattiioonnss(...)
+        qmlClearTypeRegistrations()
+    
+    qqmmllRReeggiisstteerrRReevviissiioonn(...)
+        qmlRegisterRevision(type, int, str, int, int, attachedProperties: type = 0) -> int
+    
+    qqmmllRReeggiisstteerrSSiinngglleettoonnTTyyppee(...)
+        qmlRegisterSingletonType(QUrl, str, int, int, str) -> int
+        qmlRegisterSingletonType(type, str, int, int, str, Callable[[QQmlEngine, QJSEngine], Any]) -> int
+    
+    qqmmllRReeggiisstteerrTTyyppee(...)
+        qmlRegisterType(QUrl, str, int, int, str) -> int
+        qmlRegisterType(type, attachedProperties: type = 0) -> int
+        qmlRegisterType(type, str, int, int, str, attachedProperties: type = 0) -> int
+        qmlRegisterType(type, int, str, int, int, str, attachedProperties: type = 0) -> int
+    
+    qqmmllRReeggiisstteerrUUnnccrreeaattaabblleeTTyyppee(...)
+        qmlRegisterUncreatableType(type, str, int, int, str, str) -> int
+        qmlRegisterUncreatableType(type, int, str, int, int, str, str) -> int
+    
+    qqmmllTTyyppeeIIdd(...)
+        qmlTypeId(str, int, int, str) -> int
+    
+    qqrraanndd(...)
+        qrand() -> int
+    
+    qqssrraanndd(...)
+        qsrand(int)
+    
+    qqtt__sseett__sseeqquueennccee__aauuttoo__mmnneemmoonniicc(...)
+        qt_set_sequence_auto_mnemonic(bool)
+    
+    rreesseett(...)
+        reset(QTextStream) -> QTextStream
+    
+    rriigghhtt(...)
+        right(QTextStream) -> QTextStream
+    
+    sscciieennttiiffiicc(...)
+        scientific(QTextStream) -> QTextStream
+    
+    sshhoowwbbaassee(...)
+        showbase(QTextStream) -> QTextStream
+    
+    uuppppeerrccaasseebbaassee(...)
+        uppercasebase(QTextStream) -> QTextStream
+    
+    uuppppeerrccaasseeddiiggiittss(...)
+        uppercasedigits(QTextStream) -> QTextStream
+    
+    wwss(...)
+        ws(QTextStream) -> QTextStream
+
+DDAATTAA
+    BBaassee6644 = <QCborKnownTags.Base64: 34>
+    BBaassee6644uurrll = <QCborKnownTags.Base64url: 33>
+    BBiiggffllooaatt = <QCborKnownTags.Bigfloat: 5>
+    CCOOSSEE__EEnnccrryypptt = <QCborKnownTags.COSE_Encrypt: 96>
+    CCOOSSEE__EEnnccrryypptt00 = <QCborKnownTags.COSE_Encrypt0: 16>
+    CCOOSSEE__MMaacc = <QCborKnownTags.COSE_Mac: 97>
+    CCOOSSEE__MMaacc00 = <QCborKnownTags.COSE_Mac0: 17>
+    CCOOSSEE__SSiiggnn = <QCborKnownTags.COSE_Sign: 98>
+    CCOOSSEE__SSiiggnn11 = <QCborKnownTags.COSE_Sign1: 18>
+    DDaatteeTTiimmeeSSttrriinngg = <QCborKnownTags.DateTimeString: 0>
+    DDeecciimmaall = <QCborKnownTags.Decimal: 4>
+    EEnnccooddeeddCCbboorr = <QCborKnownTags.EncodedCbor: 24>
+    EExxppeecctteeddBBaassee1166 = <QCborKnownTags.ExpectedBase16: 23>
+    EExxppeecctteeddBBaassee6644 = <QCborKnownTags.ExpectedBase64: 22>
+    EExxppeecctteeddBBaassee6644uurrll = <QCborKnownTags.ExpectedBase64url: 21>
+    FFaallssee = <QCborSimpleType.False: 20>
+    MMiimmeeMMeessssaaggee = <QCborKnownTags.MimeMessage: 36>
+    NNeeggaattiivveeBBiiggnnuumm = <QCborKnownTags.NegativeBignum: 3>
+    NNuullll = <QCborSimpleType.Null: 22>
+    PPYYQQTT__CCOONNFFIIGGUURRAATTIIOONN = {'sip_flags': '-n PyQt5.sip -t WS_X11 -t Qt_5_12_...
+    PPYYQQTT__VVEERRSSIIOONN = 330752
+    PPYYQQTT__VVEERRSSIIOONN__SSTTRR = '5.12'
+    PPoossiittiivveeBBiiggnnuumm = <QCborKnownTags.PositiveBignum: 2>
+    QQQQmmllLLiissttPPrrooppeerrttyy = 'QQmlListProperty<QObject>'
+    QQTT__VVEERRSSIIOONN = 330753
+    QQTT__VVEERRSSIIOONN__SSTTRR = '5.12.1'
+    QQWWIIDDGGEETTSSIIZZEE__MMAAXX = 16777215
+    QQttCCrriittiiccaallMMssgg = 2
+    QQttDDeebbuuggMMssgg = 0
+    QQttFFaattaallMMssgg = 3
+    QQttIInnffooMMssgg = 4
+    QQttSSyysstteemmMMssgg = 2
+    QQttWWaarrnniinnggMMssgg = 1
+    RReegguullaarrEExxpprreessssiioonn = <QCborKnownTags.RegularExpression: 35>
+    SSiiggnnaattuurree = <QCborKnownTags.Signature: 55799>
+    TTrruuee = <QCborSimpleType.True: 21>
+    UUnnddeeffiinneedd = <QCborSimpleType.Undefined: 23>
+    UUnniixxTTiimmee__tt = <QCborKnownTags.UnixTime_t: 1>
+    UUrrll = <QCborKnownTags.Url: 32>
+    UUuuiidd = <QCborKnownTags.Uuid: 37>
+    ____lliicceennssee____ = mappingproxy({'Type': 'gpl'})
+    qqAApppp = <PyQt5.QtWidgets.QApplication object>
+
+FFIILLEE
+    /home/quinram/envForcst205/lib/python3.6/site-packages/PyQt5/Qt.so
+
