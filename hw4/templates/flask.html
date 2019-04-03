@@ -1,0 +1,31 @@
+<!-- flask.html -->
+
+{% block title %}
+<h1> Options: </h1>
+{% endblock %}
+
+{% block content1 %}
+<h2>{{ first_pic.title }}</h2>
+<a href = "{{ url_for('t_test', id=first_pic.id) }}">
+	{% set imgID = 'images/'+first_pic.id+'.jpg' %}
+	<img src = "{{ url_for('static', filename=imgID) }}" />
+	</a>
+{% endblock %}
+
+
+{% block content2 %}
+<h2>{{ second_pic.title }}</h2>
+<a href = "{{ url_for('t_test', id=second_pic.id) }}">
+	{% set imgID = 'images/'+second_pic.id+'.jpg' %}
+	<img src = "{{ url_for('static', filename=imgID) }}" />
+	</a>
+{% endblock %}
+
+
+{% block content3 %}
+<h2>{{ third_pic.title }}</h2>
+<a href = "{{ url_for('t_test', id=third_pic.id) }}">
+	{% set imgID = 'images/'+third_pic.id+'.jpg' %}
+	<img src = "{{ url_for('static', filename=imgID) }}" />
+	</a>
+{% endblock %}

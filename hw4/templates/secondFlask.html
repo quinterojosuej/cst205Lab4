@@ -1,0 +1,16 @@
+<h1> Your Image is </h1>
+
+
+{% block content %}
+
+<h1>"{{ var.title }}" by "{{ var.flickr_user }}"</h1>
+
+	{% set imgID = 'images/'+var.id+'.jpg' %}
+	<img src = "{{ url_for('static', filename=imgID) }}" />
+	<br> 
+	<h3> {{ mode }} image in {{ form }} with width {{ width }} and height {{ height }}.</h3>
+	<a href = "{{ url_for('home') }}"> go back </a>
+
+{% endblock %}
+
+
